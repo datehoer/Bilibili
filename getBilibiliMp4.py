@@ -40,6 +40,6 @@ with open(title+'.mp4', 'wb') as file:
     file.write(video_content)
 print("视频开始合并")
 COMMAND = f'ffmpeg -i {title}.mp4 -i {title}.mp3 -c:v copy -c:a aac -strict experimental {title}total.mp4'
-subprocess.Popen(COMMAND, shell=True)  # 这里用的是Popen，就是说它运行在后台，多线程。也可以用下面的run，就是单线程
+subprocess.Popen(COMMAND, shell=True, encoding="utf-8")  # 这里用的是Popen，就是说它运行在后台，多线程。也可以用下面的run，就是单线程
 # subprocess.run(COMMAND)
 print('视频合并结束')
