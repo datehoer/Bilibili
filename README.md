@@ -25,3 +25,7 @@ download:https://www.ffmpeg.org/
 2. re---正则表达式，获取对应的数据
 3. json---json库，将对应的字符串转化成json数据
 4. subprocess---多线程，执行cmd指令合成视频
+
+
+具体效果请看b站视频:https://www.bilibili.com/video/BV1WQ4y1D7RY
+gif动画请看:![](getMoremp4.gif)
